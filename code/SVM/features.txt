@@ -1,0 +1,36 @@
+INPUT:
+    revenue is revenue / budget                   float             done
+    dirAvgRevenue								float	          done
+    dirAvgRating								float	          done
+    dirBestRevenue								float	          done
+    dirWorstRating								float	          done
+    dirBestRevenue								float	          done
+    dirWorstRating								float	          done
+
+    actor1AvgRevnue								float			  done
+    actor1AvgRating								float             done
+    actor2AvgRevnue								float			  done
+    actor2AvgRating								float		      done
+    actor3AvgRevnue								float             done
+    actor3AvgRating								float             done
+    budget										float             done
+    popularity of franchise if its franchise   	float             done
+    genre(bit vector)							bit vector        done
+
+    revnue is calculated proportional to budget so neutrailizing inflation effect:
+        P on of the million other assumptions i am going to make:
+            P XD .
+
+    {0: 181, 1: 54, 2: 89, 3: 153}
+
+
+OUTPUT:
+    class predicted
+    blockbuster                            rating > 7, box office > 3
+    box office winner                      rating < 7, box office > 3
+    critical winner                        rating > 7, box office < 3
+    mediocore                              ratio < 2   box office < 3
+    disaster                               ratio < 1   box office > 3
+
+MODELS:
+    logistic regression and neural network
